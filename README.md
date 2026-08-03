@@ -16,9 +16,57 @@ Ergomech has modified the original Sofle Hybrid to include a 5 way switch on the
 # ErgoMech Sofle Hybrid Wireless
 The Ergomech Sofle Hybrid Wireless uses a Nice!Nano microcontroller and runs the ZMK firmware. This guide will show you how to flash the ZMK firmware to the Nice!Nano microcontroller.
 
-## Default keymap
-The default keymap of this keyboard can be found here:
-![Default Keymap](./keymap-drawer/sofle_ergomech.svg)
+## Keymap
+
+The diagrams below match the keymap in [`config/sofle_ergomech.keymap`](config/sofle_ergomech.keymap).
+
+### Default layer
+
+```text
+┌──────┬─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┬──────┐
+│  `   │  1  │  2  │  3  │  4  │  5  │       │  6  │  7  │  8  │  9  │  0  │ Bksp │
+├──────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼──────┤
+│ Tab  │  Q  │  W  │  E  │  R  │  T  │       │  Y  │  U  │  I  │  O  │  P  │  \   │
+├──────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼──────┤
+│ Esc  │  A  │  S  │  D  │  F  │  G  │       │  H  │  J  │  K  │  L  │  ;  │  '   │
+├──────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼──────┤
+│ Ctrl │  Z  │  X  │  C  │  V  │  B  │       │  N  │  M  │  ,  │  .  │  /  │Shift │
+└──────┴─────┴─────┴─────┴─────┴─────┘       └─────┴─────┴─────┴─────┴─────┴──────┘
+                       [Mute: roller press]
+       [Shift] [Alt] [GUI] [Lower] [Space]     [Enter] [Raise] [GUI] [AltGr] [Ctrl]
+
+                                                        [Up]
+                                                  [Left][Enter][Right]
+                                                       [Down]
+```
+
+Turning the roller sends Volume Up or Volume Down. Pressing it sends Mute.
+
+### Lower layer
+
+`·` means transparent, so the key falls through to the Default layer.
+
+```text
+┌────────┬─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┬──────┐
+│ Studio │ F1  │ F2  │ F3  │ F4  │ F5  │       │ F6  │ F7  │ F8  │  -  │  =  │PrtSc │
+├────────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼──────┤
+│   ·    │  ·  │  ·  │  ·  │  ·  │  ·  │       │  ·  │  ·  │  ·  │  {  │  }  │  ·   │
+├────────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼──────┤
+│   ·    │  ·  │  ·  │  ·  │  ·  │  ·  │       │Left │ Up  │Down │Right│  ·  │  ·   │
+├────────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼──────┤
+│   ·    │  ·  │  ·  │  ·  │  ·  │  ·  │       │  ·  │  ·  │  ·  │  ·  │  ·  │  ·   │
+└────────┴─────┴─────┴─────┴─────┴─────┘       └─────┴─────┴─────┴─────┴─────┴──────┘
+                          [·]
+          [·] [·] [·] [·] [·]                  [BT clear all] [·] [·] [·] [·]
+
+                                                        [·]
+                                                   [·]  [·]  [·]
+                                                        [·]
+```
+
+### Raise and Adjust layers
+
+Every key on these layers is transparent. Roller rotation and press therefore fall through to the active Lower or Default mapping.
 
 ## Flashing the Sofle Hybrid
 The ZMK cli tool would typically have you step through several questions to generate the necessary code to flash the firmware then upload it to a new repository on GitHub.
@@ -79,7 +127,7 @@ ZMK does provide an online [keymap editor](https://nickcoutsos.github.io/keymap-
 
 #### Modifying the keymap with the keymap editor
 - The keymap editor is configured to support the 5 way switch.
-- Support for encoders will come soon, for now you can edit the function of the encoder by editing the keymap file.
+- The roller bindings are configured in the `sensor-bindings` property of each layer. The current mapping is Volume Up/Down, with Mute on press.
 
 
 #### Modifying the keymap manually
