@@ -18,55 +18,11 @@ The Ergomech Sofle Hybrid Wireless uses a Nice!Nano microcontroller and runs the
 
 ## Keymap
 
-The diagrams below match the keymap in [`config/sofle_ergomech.keymap`](config/sofle_ergomech.keymap).
+This diagram is regenerated automatically from [`config/sofle_ergomech.keymap`](config/sofle_ergomech.keymap) whenever the keymap changes:
 
-### Default layer
+![Current keymap](./keymap-drawer/sofle_ergomech.svg)
 
-```text
-┌──────┬─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┬──────┐
-│  `   │  1  │  2  │  3  │  4  │  5  │       │  6  │  7  │  8  │  9  │  0  │ Bksp │
-├──────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼──────┤
-│ Tab  │  Q  │  W  │  E  │  R  │  T  │       │  Y  │  U  │  I  │  O  │  P  │  \   │
-├──────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼──────┤
-│ Esc  │  A  │  S  │  D  │  F  │  G  │       │  H  │  J  │  K  │  L  │  ;  │  '   │
-├──────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼──────┤
-│ Ctrl │  Z  │  X  │  C  │  V  │  B  │       │  N  │  M  │  ,  │  .  │  /  │Shift │
-└──────┴─────┴─────┴─────┴─────┴─────┘       └─────┴─────┴─────┴─────┴─────┴──────┘
-                       [Mute: roller press]
-       [Shift] [Alt] [GUI] [Lower] [Space]     [Enter] [Raise] [GUI] [AltGr] [Ctrl]
-
-                                                        [Up]
-                                                  [Left][Enter][Right]
-                                                       [Down]
-```
-
-Turning the roller sends Volume Up or Volume Down. Pressing it sends Mute.
-
-### Lower layer
-
-`·` means transparent, so the key falls through to the Default layer.
-
-```text
-┌────────┬─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┬──────┐
-│ Studio │ F1  │ F2  │ F3  │ F4  │ F5  │       │ F6  │ F7  │ F8  │  -  │  =  │PrtSc │
-├────────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼──────┤
-│   ·    │  ·  │  ·  │  ·  │  ·  │  ·  │       │  ·  │  ·  │  ·  │  {  │  }  │  ·   │
-├────────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼──────┤
-│   ·    │  ·  │  ·  │  ·  │  ·  │  ·  │       │Left │ Up  │Down │Right│  ·  │  ·   │
-├────────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼──────┤
-│   ·    │  ·  │  ·  │  ·  │  ·  │  ·  │       │  ·  │  ·  │  ·  │  ·  │  ·  │  ·   │
-└────────┴─────┴─────┴─────┴─────┴─────┘       └─────┴─────┴─────┴─────┴─────┴──────┘
-                          [·]
-          [·] [·] [·] [·] [·]                  [BT clear all] [·] [·] [·] [·]
-
-                                                        [·]
-                                                   [·]  [·]  [·]
-                                                        [·]
-```
-
-### Raise and Adjust layers
-
-Every key on these layers is transparent. Roller rotation and press therefore fall through to the active Lower or Default mapping.
+Turning the roller sends Volume Up or Volume Down, and pressing it sends Mute. Raise and Adjust are transparent, so their keys and roller actions fall through to the active Lower or Default mapping.
 
 ## Flashing the Sofle Hybrid
 The ZMK cli tool would typically have you step through several questions to generate the necessary code to flash the firmware then upload it to a new repository on GitHub.
