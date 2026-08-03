@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: sofle_ergomech}
 layers:
   default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BSPC, TAB, Q, W, E, R, T, Y, U, I, O, P, \, ESC, A, S, D, F, G, H, J, K, L, ;, '''', LCTRL, Z,
-    X, C, V, B, N, M, ',', ., /, RSHFT, MUTE, LSHFT, LALT, LGUI, lower, SPACE, RET, raise, RGUI, RALT, RCTRL, ENTER, RIGHT, UP, LEFT, DOWN]
+    X, C, V, B, N, M, ',', ., /, RSHFT, MUTE, LSHFT, LALT, LGUI, SPACE, lower, RET, SPACE, RGUI, RALT, RCTRL, ENTER, RIGHT, UP, LEFT, DOWN]
   lower:
   - '&studio_unlock'
   - F1
@@ -55,8 +55,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - BT CLR ALL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -123,7 +123,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -185,10 +185,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
