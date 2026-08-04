@@ -55,14 +55,14 @@
             label = "lower";
 
             // ------------------------------------------------------------------------------------------------------------
-            // |STUDIO |  F1 |  F2 |  F3  |  F4  |  F5  |                   |  F6  |  F7   |  F8   |  F9  |  F10  | PSCRN |
+            // |STUDIO |  F1 |  F2 |  F3  |  F4  |  F5  |                   | PREV | PAUSE | PLAY  |  F9  |  F10  | PSCRN |
             // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
             // |       |     |     |      |      |      |                   |      |   -   |   =   |  {   |   }   |       |
             // |       |     |     |      |      |      |        |  |       |      |       |       |      |       |       |
             //               |     |     |      |      |       |  | BTCLR |      |       |       |      |
 
             bindings = <
-&studio_unlock  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9     &kp F10   &kp PSCRN
+&studio_unlock  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp C_PREV  &kp C_PAUSE  &kp C_PLAY  &kp F9  &kp F10  &kp PSCRN
 &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans     &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp MINUS  &kp EQUAL  &kp LBRC  &kp RBRC  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans         &trans         &trans     &trans     &trans
