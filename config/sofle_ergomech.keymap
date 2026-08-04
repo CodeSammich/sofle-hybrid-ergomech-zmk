@@ -57,14 +57,14 @@
             // ------------------------------------------------------------------------------------------------------------
             // |STUDIO |  F1 |  F2 |  F3  |  F4  |  F5  |                   | PREV | PAUSE | PLAY  |  F9  |  F10  | PSCRN |
             // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
-            // |       |     |     |      |      |      |                   |      |   -   |   =   |  {   |   }   |       |
+            // |       |     |     |      |      |      |                   |      |   -   |   =   |  [   |   ]   |       |
             // |       |     |     |      |      |      |        |  |       |      |       |       |      |       |       |
             //               |     |     |      |      |       |  | BTCLR |      |       |       |      |
 
             bindings = <
 &studio_unlock  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp C_PREV  &kp C_PAUSE  &kp C_PLAY  &kp F9  &kp F10  &kp PSCRN
 &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp MINUS  &kp EQUAL  &kp LBRC  &kp RBRC  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans         &trans         &trans     &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &bt BT_CLR_ALL  &trans  &trans  &trans  &trans
                                                     &trans  &trans  &trans  &trans  &trans
