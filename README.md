@@ -22,6 +22,14 @@ This diagram is regenerated automatically from [`config/sofle_ergomech.keymap`](
 
 ![Current keymap](./keymap-drawer/sofle_ergomech.svg)
 
+The current keymap includes these custom controls:
+
+- The top-right key is a multi-tap media control: tap once for Play/Pause, twice for Next Track, or three times for Previous Track. Taps must be within 200 ms of each other.
+- The right thumb cluster uses Backspace, Space, and Return, with Return on the former Right GUI key.
+- The center navigation button is disabled on every layer.
+- On the Lower layer, the former F6, F7, and F8 positions send Previous Track, Pause, and Play.
+- The Lower-layer bracket keys send `[` and `]`; hold Shift to type `{` and `}`.
+
 Turning the roller sends Volume Up or Volume Down, and pressing it sends Mute. Raise and Adjust are transparent, so their keys and roller actions fall through to the active Lower or Default mapping.
 
 ## Flashing the Sofle Hybrid
